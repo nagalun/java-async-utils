@@ -79,7 +79,6 @@ public class MultiSelector implements ITaskScheduler {
 	public int setInterval(final Runnable task, final int delay) {
 		final int id = nextId.incrementAndGet();
 		tasks.offer(new TimedTask(task, delay, id));
-		System.out.println("Added task");
 		selector.wakeup();
 		return id;
 	}

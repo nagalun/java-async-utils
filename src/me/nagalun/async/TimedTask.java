@@ -3,6 +3,7 @@ package me.nagalun.async;
 /**
  * @author nagalun
  * @date 09-08-2017
+ * TODO: implement pause/continue?
  */
 public class TimedTask extends Task {
 	private long lastRan = System.currentTimeMillis();
